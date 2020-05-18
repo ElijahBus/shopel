@@ -1,0 +1,49 @@
+html, body {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;    
+    
+    /* grid-template-columns: repeat(12, 1fr);    
+    grid-template-rows: 70px 1fr 50px;
+    grid-template-areas: 
+        "n n n n n n n n n n n n"
+        "m m m m m m m m m m m m"
+        "f f f f f f f f f f f f"; */
+}
+
+.container * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    background-color: yellow;
+    min-height: 70px;    
+}
+.main {
+    background-color: red;
+    min-height: 200px;
+    flex: 1 1 0;    
+    /* grid-area: "m"; */
+}
+.footer {
+    background-color: green;
+    min-height: 50px;    
+    /* grid-area: "f"; */
+}
+
+.home-search {
+    background-color: blue;
+    height: 40px;
+    width: 100%;    
+    position: absolute;
+    z-index: 10;
+
+    margin-top: 10%;
+}
