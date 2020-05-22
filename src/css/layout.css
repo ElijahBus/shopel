@@ -16,15 +16,46 @@ html, body {
         "f f f f f f f f f f f f"; */
 }
 
-.navbar, .main, .footer {
+.main, .navbar, .footer {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+
+/* NAV BAR */
+
 .navbar {
     min-height: 70px;    
+    padding: 0 200px;
 }
+
+.logo {
+    
+}
+
+.space-between {
+    flex: 1 1 0;
+}
+
+.nav-auth {
+    display: inline-flex;        
+    padding: 0;
+    /* border: 1px solid black;
+    border-radius: 30px; */
+}
+
+.nav-auth > li {
+    list-style: none;    
+    padding: 10px 30px;
+}
+
+.nav-auth > .nav-auth-register {
+    border: 1px solid black;    
+}
+
+
+
 .main {
     min-height: 200px;
     flex: 1 1 0;    
@@ -41,6 +72,9 @@ html, body {
     width: 100%;    
     position: absolute;
     z-index: 10;
-
     margin-top: 10%;
 }
+
+
+
+
