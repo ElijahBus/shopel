@@ -16,24 +16,21 @@ html, body {
         "f f f f f f f f f f f f"; */
 }
 
-.container * {
+.navbar, .main, .footer {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .navbar {
-    background-color: yellow;
     min-height: 70px;    
 }
 .main {
-    background-color: red;
     min-height: 200px;
     flex: 1 1 0;    
     /* grid-area: "m"; */
 }
 .footer {
-    background-color: green;
     min-height: 50px;    
     /* grid-area: "f"; */
 }
