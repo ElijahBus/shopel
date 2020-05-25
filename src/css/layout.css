@@ -3,7 +3,8 @@ html, body {
     height: 100%;
 }
 
-.container {
+.root-container {
+    position: relative;
     height: 100%;
     display: flex;
     flex-direction: column;    
@@ -13,10 +14,10 @@ html, body {
     grid-template-areas: 
         "n n n n n n n n n n n n"
         "m m m m m m m m m m m m"
-        "f f f f f f f f f f f f"; */
+        "f f f f f f f f f f f f"; */    
 }
 
-.main, .navbar, .footer {
+.main, .nav-bar, .footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,8 +26,8 @@ html, body {
 
 /* NAV BAR */
 
-.navbar {
-    min-height: 70px;    
+.nav-bar {
+    height: 70px;    
     padding: 0 200px;
 }
 
@@ -40,14 +41,14 @@ html, body {
 
 .nav-auth {
     display: inline-flex;        
-    padding: 0;
+    padding: 0;    
     /* border: 1px solid black;
     border-radius: 30px; */
 }
 
 .nav-auth > li {
     list-style: none;    
-    padding: 10px 30px;
+    padding: 5px 30px;
 }
 
 .nav-auth > .nav-auth-register {
@@ -66,13 +67,15 @@ html, body {
     /* grid-area: "f"; */
 }
 
-.home-search {
-    background-color: blue;
-    height: 40px;
-    width: 100%;    
+.home-search {    
+    align-self: center;
+    height: auto;
+    
     position: absolute;
     z-index: 10;
-    margin-top: 10%;
+    top: 120px;
+    /* left: 20px; */
+    
 }
 
 
