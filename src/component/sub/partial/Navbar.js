@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Navbar(props) {
     return (
-        <div className="navbar">
+        <div className="nav-bar">
             <code className="logo">SHOPEL</code>
             <span className="space-between"></span>
             <ul className="nav-auth">
