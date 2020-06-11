@@ -6,6 +6,7 @@ import {
   Input,  
   Button
  } from "reactstrap";
+ import {Link} from 'react-router-dom';
 
 function Login() {
   return( 
@@ -14,7 +15,9 @@ function Login() {
       <Input></Input>
       <Label>Password</Label>
       <Input type="password"></Input>
-      <Button>Login</Button>
+      <Link to="/shop">
+        <Button>Login</Button>
+      </Link>
     </Form>
   )
 }
