@@ -11,6 +11,7 @@ import Footer from './sub/partial/Footer';
 import SearchShop from "./sub/partial/SearchShop";
 import Login from './sub/auth/Login';
 import Register from './sub/auth/Register';
+import Shop from './sub/Shop';
 
 function Home() {
   return (
@@ -26,6 +27,7 @@ function Home() {
           )} />
           <Route path="/login" exact component={ Login } />
           <Route path="/register" eaxct component={ Register } />
+          <Route path="/shop" exact render={ () => <Shop /> } />
         </Switch>
         <Footer />        
       </div>      
